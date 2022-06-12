@@ -14,7 +14,7 @@ export interface MessageProps {
 export default function Message(props: MessageProps) {
     return (
         <StyledRoot>
-            {props.recordingState === "waiting" && "Click the button to record your beautiful voice. "}
+            {props.recordingState === "waiting" && "Click the button to record your voice. "}
             {props.recordingState === "recording" && "recording..."}
             {props.recordingState === "finished" && "Thank you! Below you can listen to your recording and process it"}
         </StyledRoot>

@@ -14,7 +14,7 @@
 - Deployment to githup with gh-pages
 
 <h2>What I would do next if I had more time:</h2>
-- Check the MediaRecorder API approach in different browsers. It doesn't seem to work in safari currently.
+- Check the MediaRecorder API approach in different browsers. It doesn't seem to work in safari currently. (According to https://caniuse.com/?search=mediaRecorder the approach is generally ok for all modern browsers)
 - Style audio player
 - Setup UI to allow the user to input their e-mail
 - Setup the interaction with a (mocked/dummy) backend
