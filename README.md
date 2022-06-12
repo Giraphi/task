@@ -14,7 +14,8 @@
 - Deployment to github with `gh-pages` (because this makes it very easy to deploy an App within seconds and I thought it would be nice to have an actual live result)
 
 <h2>What I would do next if I had more time:</h2>
-- Check the MediaRecorder API approach in different browsers. It doesn't seem to work in safari currently. (According to https://caniuse.com/?search=mediaRecorder the approach is generally ok for all modern browsers)
+- Check the MediaRecorder API approach in different browsers. According to https://caniuse.com/?search=mediaRecorder the approach is generally ok for all modern browsers
+- Current approach doesn't seem to properly work on Safari. (because of the `<audio>` tag?)
 - Style audio player
 - Deal with the microphone access-request from a UX perspective. E.g. show "Please allow access" text while waiting for permission.
 - Setup UI to allow the user to input their e-mail
