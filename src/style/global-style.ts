@@ -26,4 +26,11 @@ export const GlobalStyle = createGlobalStyle`
         font-size: ${theme.typography.fontSize.p};
         line-height: ${theme.typography.lineHeight.p};
     }
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: ${theme.space.md};
+        font-size: ${theme.typography.fontSize.h1};
+        line-height: ${theme.typography.lineHeight.h1};
+    }
 `;

@@ -1,10 +1,18 @@
 import React from "react";
-import { ReactComponent as Microphone } from "./microphone.svg";
 import styled from "styled-components";
 import { GlobalStyle } from "./style/global-style";
+import LayoutContainer from "./components/LayoutContainer";
+import { theme } from "./style/theme";
+import RecordButton from "./components/RecordButton";
 
 const StyledRoot = styled.div`
-    color: red;
+    min-height: 100vh;
+    background-color: ${theme.color.black};
+`;
+
+const StyledIconRow = styled.div`
+    display: flex;
+    justify-content: center;
 `;
 
 function App() {
@@ -12,8 +20,12 @@ function App() {
         <>
             <GlobalStyle />
             <StyledRoot>
-                <h1>Hello</h1>
-                <Microphone />
+                <LayoutContainer>
+                    <h1>Hi there :)</h1>
+                    <p>Click the button to record your voice. </p>
+
+                    <RecordButton />
+                </LayoutContainer>
             </StyledRoot>
         </>
     );
