@@ -4,7 +4,7 @@ import { GlobalStyle } from "./style/global-style";
 import LayoutContainer from "./components/LayoutContainer";
 import { theme } from "./style/theme";
 import RecordButton from "./components/RecordButton";
-import AudioPlayer from "./components/AudioPlayer";
+import AudioContainer from "./components/AudioContainer";
 import Message from "./components/Message";
 
 const StyledRoot = styled.div`
@@ -40,6 +40,7 @@ function App() {
     function handleStart() {
         if (recorder) {
             audioChunksRef.current = [];
+            setRecordedAudio(undefined);
             recorder.start();
         }
 
@@ -75,10 +76,9 @@ function App() {
             <StyledRoot>
                 <LayoutContainer>
                     <h1>Hi there :)</h1>
-                    <p>Click the button to record your voice. </p>
                     <RecordButton onClick={handleButtonClick} isRecording={recordingState === "recording"} />
-
-                    <AudioPlayer audioSrc={recordedAudio} />
+                    <Message recordingState={recordingState} />
+                    <AudioContainer audioSrc={recordedAudio} />
                 </LayoutContainer>
             </StyledRoot>
         </>

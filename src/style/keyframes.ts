@@ -2,21 +2,21 @@ import { keyframes } from "styled-components";
 
 export const activeBlink = keyframes`
     0% {
-        opacity: 0
+        opacity: 1;
     }
 
-    40% {
+    10% {
         opacity: 0.9;
     }
 
     50% {
-        opacity: 1;
+        opacity: 0;
     }
 
-    60% {
+    90% {
         opacity: 0.9;
     }
 
     100% {
-        opacity: 0;
+        opacity: 1;
     }`;

@@ -1,13 +1,10 @@
 import { createGlobalStyle } from "styled-components";
-import SourceCodePro from "../fonts/source-code-pro-regular.woff";
 import { theme } from "./theme";
 
-export const GlobalStyle = createGlobalStyle`
-    @font-face {
-        font-family: "SourceCodePro";
-        src: url(${SourceCodePro}) format("woff");
-    }
+// Include fonts via plain css instead of styled-components to avoid font flickering in some cases.
+import "./font-faces.css";
 
+export const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;

@@ -2,7 +2,8 @@ export const theme = {
     color: {
         white: "#eee",
         black: "#111",
-        red: "#d00",
+        record: "#d00",
+        confirm: "#0d0",
     },
     border: {
         width: "2px",

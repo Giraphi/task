@@ -18,17 +18,17 @@ const StyledRoot = styled.button<{ isRecording: boolean }>`
     }
 
     :hover {
-        color: ${theme.color.red};
-        border-color: ${theme.color.red};
+        color: ${theme.color.record};
+        border-color: ${theme.color.record};
     }
 
     ${(props) =>
         props.isRecording &&
         css`
-            border-color: ${theme.color.red};
+            border-color: ${theme.color.record};
 
             > svg {
-                color: ${theme.color.red};
+                color: ${theme.color.record};
                 animation: ${activeBlink} 2s linear infinite;
             }
         `}
