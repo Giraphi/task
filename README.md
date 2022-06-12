@@ -8,10 +8,10 @@
 - Show a basic understanding of an approach to record audio with MediaRecorder API.
 
 <h2>Technology stack:</h2>
-- React App created with `create-react-app`
-- Code formatting with `prettier`
-- Styling with `styled-components`
-- Deployment to githup with `gh-pages`
+- React App created with `create-react-app` (because this makes it easy to setup a react app with minimal effort, as long as there are no special needs that speak against it.)
+- Code formatting with `prettier` (because I'm overall used to prettier style and it has proven to be very valueable in collaborative working)
+- Styling with `styled-components` (because I wanted a CSS in JS framework as a modern styling approach)
+- Deployment to github with `gh-pages` (because this makes it very easy to deploy an App within seconds and I thought it would be nice to have an actual live result)
 
 <h2>What I would do next if I had more time:</h2>
 - Check the MediaRecorder API approach in different browsers. It doesn't seem to work in safari currently. (According to https://caniuse.com/?search=mediaRecorder the approach is generally ok for all modern browsers)
