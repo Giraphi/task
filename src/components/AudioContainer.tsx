@@ -19,7 +19,8 @@ export interface AudioPlayerProps {
 
 export default function AudioContainer(props: AudioPlayerProps) {
     function handleButtonClick() {
-        //
+        // Use Axios or another client to send the audio blob to the server
+        alert("This is not implemented yet");
     }
 
     return (
